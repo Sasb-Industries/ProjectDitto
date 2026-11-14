@@ -48,3 +48,4 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 ## Status
 
 - 2026-11-13: repo set up, unmodified Emerald builds and runs from source.
+- 2026-11-13: Kanto mainland imported from FireRed (256 maps, 51 tilesets) as empty, walkable maps. A sailor in Littleroot Town and one in Pallet Town carry you between the regions. This is the proposed first milestone minus the trainer battle. Kanto still needs NPCs, scripts, trainers, wild encounters, tile animations and a town map.

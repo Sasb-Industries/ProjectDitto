@@ -960,3 +960,34 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+
+@ Project Ditto: proof-of-concept boat link to Kanto. Replace once region travel is designed.
+LittlerootTown_EventScript_KantoSailor::
+	lock
+	faceplayer
+	msgbox LittlerootTown_Text_SailToPallet, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_KantoSailorDecline
+	msgbox LittlerootTown_Text_SetSailForPallet, MSGBOX_DEFAULT
+	closemessage
+	playse SE_SHIP
+	warp MAP_PALLET_TOWN, 9, 15
+	waitstate
+	release
+	end
+
+LittlerootTown_EventScript_KantoSailorDecline::
+	msgbox LittlerootTown_Text_SailorComeBack, MSGBOX_DEFAULT
+	release
+	end
+
+LittlerootTown_Text_SailToPallet:
+	.string "Ahoy! My boat's moored just past\n"
+	.string "the trees.\p"
+	.string "Would you like me to sail you over\n"
+	.string "to PALLET TOWN in KANTO?$"
+
+LittlerootTown_Text_SetSailForPallet:
+	.string "All aboard! Next stop, PALLET TOWN!$"
+
+LittlerootTown_Text_SailorComeBack:
+	.string "No rush. The sea's not going anywhere.$"
