@@ -21,7 +21,7 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 | Completeness | All 386 obtainable in one solo playthrough. Trade evolutions become item or level evolutions. All nine starters, both fossils of each pair and the event-only mythicals are obtainable in-game. |
 | Old Emerald features | Battle Frontier, contests and the rest stay for now. Nothing is cut yet. |
 | Map tooling | Porymap for humans, plus our own Python toolkit in `tools/ditto/` that AI agents drive. No custom map editor. |
-| Repo | Public, a plain clone of pokeemerald with `pret` as `upstream`. No ROM files committed. |
+| Repo | Public. Started from a snapshot of pokeemerald without its history; we do not merge upstream updates. No ROM files committed. |
 | Workflow | No enforced process. Hand coding, Claude Code and hand editing are all fine. |
 
 ## Open — for the group

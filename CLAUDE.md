@@ -55,6 +55,5 @@ Our own tooling goes in `tools/ditto/` and is written in Python. Nothing is ther
 
 ## Git
 
-- `upstream` is `pret/pokeemerald`; `origin` is our repo. Never push to `upstream`.
+- The repo began as a snapshot of `pret/pokeemerald` at commit `731ad5bfd`, without its history. We do not merge upstream updates; to see why a line of original engine code exists, look at pret's repository.
 - No enforced workflow. Use a branch and pull request for large or risky changes; small fixes can go straight to `main`.
-- Keep our additions in clearly ours locations (`tools/ditto/`, `docs/ditto/`) so merging upstream updates stays easy.
