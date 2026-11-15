@@ -1,6 +1,6 @@
 # Project Ditto
 
-A Game Boy Advance game that puts Hoenn, Kanto (with the Sevii Islands) and Johto into one adventure, with all 386 Gen 1–3 Pokémon obtainable in a single playthrough. It is a hobby project for our group.
+A Game Boy Advance game that puts Hoenn, Kanto (with the Sevii Islands) and Johto into one adventure, with all 386 Gen 1–3 Pokémon obtainable in a single playthrough.
 
 - What we have decided and what is still open: [docs/ditto/design.md](docs/ditto/design.md)
 - Working in the repo, including with Claude Code: [CLAUDE.md](CLAUDE.md)
