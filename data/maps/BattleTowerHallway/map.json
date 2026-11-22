@@ -1,0 +1,63 @@
+{
+  "id": "MAP_BATTLE_TOWER_HALLWAY",
+  "name": "BattleTowerHallway",
+  "layout": "LAYOUT_BATTLE_TOWER_HALLWAY",
+  "music": "MUS_RG_PEWTER",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_ELEVATOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_BATTLE_TOWER_BATTLE_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
