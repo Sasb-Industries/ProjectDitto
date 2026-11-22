@@ -1,4 +1,5 @@
 #include "global.h"
+#include "day_night.h"
 #include "decompress.h"
 #include "event_object_movement.h"
 #include "field_camera.h"
@@ -781,7 +782,10 @@ void FieldEffectScript_LoadTiles(u8 **script)
 void FieldEffectScript_LoadFadedPalette(u8 **script)
 {
     struct SpritePalette *palette = (struct SpritePalette *)FieldEffectScript_ReadWord(script);
-    LoadSpritePalette(palette);
+    bool8 isNew = (IndexOfSpritePaletteTag(palette->tag) == 0xFF);
+    u8 paletteSlot = LoadSpritePalette(palette);
+    if (isNew && paletteSlot != 0xFF)
+        DayNight_OnObjectPaletteLoaded(paletteSlot, palette->data, palette->tag);
     UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(palette->tag));
     (*script) += 4;
 }
