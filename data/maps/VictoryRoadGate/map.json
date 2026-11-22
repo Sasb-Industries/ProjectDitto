@@ -3,7 +3,7 @@
   "name": "VictoryRoadGate",
   "layout": "LAYOUT_VICTORY_ROAD_GATE",
   "music": "MUS_RG_PEWTER",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_ROUTE_26",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
