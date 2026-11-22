@@ -21,7 +21,7 @@ open -a mGBA pokeemerald_modern.gba  # play it
 ## Hard rules
 
 - Never commit ROM files (`*.gba`), saves or build output. `.gitignore` already covers them; do not override it.
-- Only Gen 1–3 content: 386 species, no later-gen Pokémon, moves, abilities or Megas. Fairy type is an open question, so do not add it.
+- Only Gen 1–3 content: 386 species, no later-gen Pokémon, moves, abilities or Megas. The one decided exception is the Fairy type, which is in; which Fairy moves and other Gen 6 type changes come with it is still open in the design doc, so ask before adding any.
 - Levels are fixed per area and authored along the story route. Do not add runtime level scaling.
 - One person or agent edits a given map at a time. `map.json` and `map.bin` merge badly.
 - Kanto and Sevii content is ported from `pret/pokefirered`, keeping FireRed tilesets for now. Port layouts faithfully; redesign comes later. The Sevii Islands are not imported yet.
