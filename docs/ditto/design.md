@@ -26,6 +26,17 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 | Move relearner and tutors | Yes. |
 | Exp. Share | As in Gen 3: a held item that shares with one Pokémon. |
 | Shiny rate | 1/4096 (Gen 3 is 1/8192). |
+| Trade evolutions | Use Emerald Legacy's replacements: Kadabra and Haunter evolve at level 42, Graveler and Machoke at 38; Slowking, Steelix, Politoed, Kingdra, Scizor, Porygon2 and Gorebyss evolve by using their trade item like a stone. Any trade evolution not listed (such as Huntail) follows the same item-as-stone pattern; check against Legacy's full docs. |
+| Pokédex | One National Pokédex of all 386. No regional dexes. |
+| PC boxes | 16 (Emerald has 14). Needs one more 4 KB save block per save copy; how to free it is open item 19. |
+| Egg incubator | An incubator upstairs in Pokémon Centers holds eggs and hatches them, so eggs don't take party slots. |
+| Quality of life | Fast saving, fast text and battle text; run indoors; offer another Repel when one runs out; show the move name when a TM or HM is received; use healing items repeatedly from the bag; bigger bag with sorting, overflow to the PC; HM moves can be forgotten freely; switch Mach/Acro Bike with one button; summary screen shows IVs and EVs and colours stats by nature; Kurt makes balls instantly. |
+| Cleared obstacles | Smashed rocks and cut trees stay gone. |
+| Renewable resources | Berry trees don't die out; berries, evolution stones, shards and other evolution items can be bought or farmed again and again. |
+| Bug fixes | Turn on pokeemerald's built-in `BUGFIX` switch (`include/config.h`). |
+| Trainer AI | Smarter: fix Gen 3's AI bugs (Protect and recovery spam and others) and improve switching, as Emerald Legacy does. |
+| Gym rematches | None in 1.0. |
+| Weather and battle tweaks | In, following Emerald Legacy (e.g. hail and sandstorm boosts). Weather is added to the other regions where it fits. |
 | Levels | Fixed per area, set along the story route. Early areas stay easy when revisited; late areas are hard if reached early, which acts as a soft wall. No runtime scaling. |
 | Plots | Keep each region's storyline. Change them only where needed for one region to lead into the next, and keep those changes small, but a game that flows well comes first. |
 | Sevii Islands | In 1.0. |
@@ -51,9 +62,13 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 10. **Name.** What the game is called at 1.0.
 11. **Who does what.** Code, maps, art, writing, music.
 12. **Region order.** Confirm the working order above, and which league is the final test.
-13. **Changing natures and IVs.** Whether, and how. Needs its own discussion.
+13. **Changing natures and IVs.** Whether, and how. Needs its own discussion. (Showing them is decided.)
 14. **Physical/special details.** Moves that need a call, such as Hidden Power and Curse.
 15. **TM shops.** Where each TM is sold.
+16. **Badge level cap.** Should badges raise a level cap, to back up the fixed level curve?
+17. **Changing the clock.** Can players set the time freely, or only skip the night at hotels?
+18. **Incubator details.** How many eggs it holds, and how they hatch (steps walked, time, or both).
+19. **Room for 16 boxes.** Free the two save blocks used by Trainer Hill and recorded battles (cuts those saves), store boxed Pokémon more compactly (more work, cuts nothing), or drop the backup save copy (last resort).
 
 ## To investigate (not decisions)
 
