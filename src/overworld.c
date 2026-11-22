@@ -6,6 +6,7 @@
 #include "bg.h"
 #include "cable_club.h"
 #include "clock.h"
+#include "day_night.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -807,9 +808,19 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     RunOnTransitionMapScript();
     InitMap();
     CopySecondaryTilesetToVramUsingHeap(gMapHeader.mapLayout);
-    LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
+    if (DayNight_PrimaryTilesetPaletteIsStale(gMapHeader.mapLayout))
+    {
+        // The new map's day/night look differs, so the primary palettes change too.
+        LoadMapTilesetPalettes(gMapHeader.mapLayout);
+        paletteIndex = 0;
+    }
+    else
+    {
+        LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
+        paletteIndex = NUM_PALS_IN_PRIMARY;
+    }
 
-    for (paletteIndex = NUM_PALS_IN_PRIMARY; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
+    for (; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
         ApplyWeatherColorMapToPal(paletteIndex);
 
     InitSecondaryTilesetAnimation();
@@ -1487,6 +1498,7 @@ void CB2_Overworld(void)
     if (fading)
         SetVBlankCallback(NULL);
     OverworldBasic();
+    DayNight_UpdateOverworld();
     if (fading)
         SetFieldVBlankCallback();
 }

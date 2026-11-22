@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle_pyramid.h"
 #include "bg.h"
+#include "day_night.h"
 #include "fieldmap.h"
 #include "fldeff.h"
 #include "fldeff_misc.h"
@@ -817,10 +818,11 @@ static void CopyTilesetToVramUsingHeap(struct Tileset const *tileset, u16 numTil
     }
 }
 
-// Below two are dummied functions from FRLG, used to tint the overworld palettes for the Quest Log
+// Below two are dummied functions from FRLG, used to tint the overworld palettes for the Quest Log.
+// Project Ditto uses the first for the day/night tint (see src/day_night.c).
 static void ApplyGlobalTintToPaletteEntries(u16 offset, u16 size)
 {
-
+    DayNight_TintBgPalettes(offset, size);
 }
 
 static void UNUSED ApplyGlobalTintToPaletteSlot(u8 slot, u8 count)
@@ -834,15 +836,18 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
 
     if (tileset)
     {
+        // Authored morning/night palettes replace the normal ones when present.
+        const u16 (*palettes)[16] = DayNight_GetTilesetPalettes(tileset);
+
         if (tileset->isSecondary == FALSE)
         {
             LoadPalette(&black, destOffset, PLTT_SIZEOF(1));
-            LoadPalette(tileset->palettes[0] + 1, destOffset + 1, size - PLTT_SIZEOF(1));
+            LoadPalette(palettes[0] + 1, destOffset + 1, size - PLTT_SIZEOF(1));
             ApplyGlobalTintToPaletteEntries(destOffset + 1, (size - PLTT_SIZEOF(1)) >> 1);
         }
         else if (tileset->isSecondary == TRUE)
         {
-            LoadPalette(tileset->palettes[NUM_PALS_IN_PRIMARY], destOffset, size);
+            LoadPalette(palettes[NUM_PALS_IN_PRIMARY], destOffset, size);
             ApplyGlobalTintToPaletteEntries(destOffset, size >> 1);
         }
         else
@@ -871,6 +876,7 @@ void CopySecondaryTilesetToVramUsingHeap(struct MapLayout const *mapLayout)
 static void LoadPrimaryTilesetPalette(struct MapLayout const *mapLayout)
 {
     LoadTilesetPalette(mapLayout->primaryTileset, BG_PLTT_ID(0), NUM_PALS_IN_PRIMARY * PLTT_SIZE_4BPP);
+    DayNight_OnPrimaryTilesetPaletteLoaded(mapLayout);
 }
 
 void LoadSecondaryTilesetPalette(struct MapLayout const *mapLayout)
