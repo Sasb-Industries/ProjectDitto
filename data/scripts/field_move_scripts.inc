@@ -285,3 +285,83 @@ EventScript_FailSweetScent::
 
 Text_FailSweetScent:
 	.string "Looks like there's nothing here…$"
+
+@ Project Ditto: HM09 Whirlpool. Needs HM09 in the bag and a party Pokemon that can learn it.
+EventScript_Whirlpool::
+	lockall
+	special DittoFindWhirlpoolUser
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWhirlpool
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToWhirlpool, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_EndWhirlpool
+	msgbox Text_MonUsedWhirlpool, MSGBOX_DEFAULT
+	closemessage
+	special DittoStartFieldMoveShowMon
+	waitstate
+	special DittoClearWhirlpool
+	goto EventScript_EndWhirlpool
+
+EventScript_CantWhirlpool::
+	msgbox Text_CantWhirlpool, MSGBOX_DEFAULT
+
+EventScript_EndWhirlpool::
+	releaseall
+	end
+
+Text_CantWhirlpool:
+	.string "It's a vicious whirlpool!\n"
+	.string "A POKéMON may be able to pass it.$"
+
+Text_WantToWhirlpool:
+	.string "It's a vicious whirlpool!\n"
+	.string "Would you like to use WHIRLPOOL?$"
+
+Text_MonUsedWhirlpool:
+	.string "{STR_VAR_1} used WHIRLPOOL!$"
+
+@ Project Ditto: Headbutt trees (Johto). Needs a party Pokemon that knows Headbutt.
+EventScript_HeadbuttTree::
+	lockall
+	checkpartymove MOVE_HEADBUTT
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_HeadbuttNoMon
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToHeadbutt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_HeadbuttEnd
+	msgbox Text_MonDidHeadbutt, MSGBOX_DEFAULT
+	closemessage
+	special DittoStartFieldMoveShowMon
+	waitstate
+	playse SE_M_HEADBUTT
+	waitse
+	special DittoHeadbuttTree
+	goto_if_eq VAR_RESULT, FALSE, EventScript_HeadbuttNothing
+	dowildbattle
+	releaseall
+	end
+
+EventScript_HeadbuttNothing::
+	msgbox Text_HeadbuttNothing, MSGBOX_DEFAULT
+	goto EventScript_HeadbuttEnd
+
+EventScript_HeadbuttNoMon::
+	msgbox Text_HeadbuttNoMon, MSGBOX_DEFAULT
+
+EventScript_HeadbuttEnd::
+	releaseall
+	end
+
+Text_HeadbuttNoMon:
+	.string "A POKéMON could be living in this\n"
+	.string "tree. A HEADBUTT might shake it out.$"
+
+Text_WantToHeadbutt:
+	.string "A POKéMON could be in this tree.\n"
+	.string "Would you like to use HEADBUTT?$"
+
+Text_MonDidHeadbutt:
+	.string "{STR_VAR_1} did a HEADBUTT!$"
+
+Text_HeadbuttNothing:
+	.string "Nope. Nothing...$"

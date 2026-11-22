@@ -43,6 +43,10 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 | Fly | Works only within the region you are in. |
 | Johto music | Port Gold/Silver's music. |
 | Difficulty | One difficulty for everyone. No difficulty modes. |
+| Day/night colours | Johto uses Crystal's own morning, day and night palettes. Hoenn and Kanto get a computed morning and night tint outdoors until someone paints night palettes. Periods follow Crystal: morning 4:00–9:59, day 10:00–17:59, night 18:00–3:59. |
+| Whirlpool and Headbutt | HM09 Whirlpool is added and follows the HM rules. Headbutt works on headbutt trees if a party Pokémon knows it, using Crystal's headbutt encounter tables. |
+| Johto map names | Every Johto place shows its own name on entry, from a separate name table. Met locations are grouped by town or route, because only 39 map-section slots are free. |
+| Johto music, for now | Gold/Silver's songs converted automatically in their original Game Boy sound. GBA-style arrangements can replace them song by song. |
 | Weather and battle tweaks | In, following Emerald Legacy (e.g. hail and sandstorm boosts). Weather is added to the other regions where it fits. |
 | Levels | Fixed per area, set along the story route. Early areas stay easy when revisited; late areas are hard if reached early, which acts as a soft wall. No runtime scaling. |
 | Plots | Keep each region's storyline. Change them only where needed for one region to lead into the next, and keep those changes small, but a game that flows well comes first. |
@@ -90,3 +94,4 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 - 2026-11-13: repo set up, unmodified Emerald builds and runs from source.
 - 2026-11-13: Kanto mainland imported from FireRed (256 maps, 51 tilesets) as empty, walkable maps. A sailor in Littleroot Town and one in Pallet Town carry you between the regions. This is the proposed first milestone minus the trainer battle. Kanto still needs NPCs, scripts, trainers, wild encounters, tile animations and a town map.
 - 2026-11-21: Johto imported from pokecrystal (230 maps, 34 tilesets) as empty, walkable maps with Crystal's own graphics. A sailor in Pallet Town and one in New Bark Town carry you between Kanto and Johto.
+- 2026-11-22: Johto gets tile animations, Crystal's morning/day/night palettes, map names on entry, cut trees, HM09 Whirlpool and Headbutt trees. Day/night runs everywhere (tinted in Hoenn and Kanto). Gold/Silver music converted in its original Game Boy sound.

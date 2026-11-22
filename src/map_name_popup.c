@@ -14,6 +14,7 @@
 #include "text.h"
 #include "constants/battle_frontier.h"
 #include "constants/layouts.h"
+#include "constants/maps.h"
 #include "constants/region_map_sections.h"
 #include "constants/weather.h"
 
@@ -72,6 +73,31 @@ static const u16 sMapPopUp_Palette_Underwater[16] = INCGFX_U16("graphics/map_pop
 // -1 in the size excludes MAPSEC_NONE.
 // The MAPSEC values for Kanto (between MAPSEC_DYNAMIC and MAPSEC_AQUA_HIDEOUT) are also excluded,
 // and this is then handled by subtracting KANTO_MAPSEC_COUNT here and in LoadMapNamePopUpWindowBg.
+// Project Ditto: Johto places share map sections (met locations are one byte and few
+// values are free), so each Johto map carries its own entry name and frame here.
+struct JohtoMapName
+{
+    u8 mapGroup;
+    u8 mapNum;
+    const u8 *name;
+    u8 theme;
+};
+
+#include "data/johto_map_names.h"
+
+static const struct JohtoMapName *GetJohtoMapName(void)
+{
+    u32 i;
+
+    for (i = 0; i < ARRAY_COUNT(sJohtoMapNames); i++)
+    {
+        if (sJohtoMapNames[i].mapGroup == gSaveBlock1Ptr->location.mapGroup
+         && sJohtoMapNames[i].mapNum == gSaveBlock1Ptr->location.mapNum)
+            return &sJohtoMapNames[i];
+    }
+    return NULL;
+}
+
 static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
 {
     [MAPSEC_LITTLEROOT_TOWN] = MAPPOPUP_THEME_WOOD,
@@ -356,7 +382,10 @@ static void ShowMapNamePopUpWindow(void)
     else
     {
         withoutPrefixPtr = &(mapDisplayHeader[3]);
-        GetMapName(withoutPrefixPtr, gMapHeader.regionMapSectionId, 0);
+        if (GetJohtoMapName() != NULL)
+            StringCopy(withoutPrefixPtr, GetJohtoMapName()->name);
+        else
+            GetMapName(withoutPrefixPtr, gMapHeader.regionMapSectionId, 0);
     }
     AddMapNamePopUpWindow();
     LoadMapNamePopUpWindowBg();
@@ -414,6 +443,8 @@ static void LoadMapNamePopUpWindowBg(void)
             regionMapSectionId = 0; // Discard kanto region sections;
     }
     popUpThemeId = sMapSectionToThemeId[regionMapSectionId];
+    if (GetJohtoMapName() != NULL)
+        popUpThemeId = GetJohtoMapName()->theme;
 
     LoadBgTiles(GetWindowAttribute(popupWindowId, WINDOW_BG), sMapPopUp_OutlineTable[popUpThemeId], 0x400, 0x21D);
     CallWindowFunction(popupWindowId, DrawMapNamePopUpFrame);

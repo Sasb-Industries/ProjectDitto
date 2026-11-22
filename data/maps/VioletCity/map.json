@@ -2,15 +2,15 @@
   "id": "MAP_VIOLET_CITY",
   "name": "VioletCity",
   "layout": "LAYOUT_VIOLET_CITY",
-  "music": "MUS_RG_PEWTER",
-  "region_map_section": "MAPSEC_NONE",
+  "music": "MUS_GSC_VIOLET_CITY",
+  "region_map_section": "MAPSEC_VIOLET_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -29,7 +29,21 @@
       "direction": "right"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 36,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_CutTree",
+      "flag": "FLAG_TEMP_11"
+    }
+  ],
   "warp_events": [
     {
       "x": 9,

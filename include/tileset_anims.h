@@ -32,4 +32,18 @@ void InitTilesetAnim_EliteFour(void);
 void InitTilesetAnim_BattleDome(void);
 void InitTilesetAnim_BattlePyramid(void);
 
+// BEGIN ditto:import_crystal (generated, do not edit by hand)
+void InitTilesetAnim_JohtoOutdoor(void);
+void InitTilesetAnim_JohtoEliteFourRoom(void);
+void InitTilesetAnim_JohtoTower(void);
+void InitTilesetAnim_JohtoCave(void);
+void InitTilesetAnim_JohtoPark(void);
+void InitTilesetAnim_JohtoForest(void);
+void InitTilesetAnim_JohtoDarkCave(void);
+void InitTilesetAnim_JohtoIcePath(void);
+void InitTilesetAnim_JohtoOutdoorModern(void);
+void InitTilesetAnim_JohtoPort(void);
+void InitTilesetAnim_JohtoKanto(void);
+// END ditto:import_crystal
+
 #endif // GUARD_TILESET_ANIMS_H

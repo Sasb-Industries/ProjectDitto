@@ -197,6 +197,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_WARTORTLE] = { .learnset = {
@@ -224,6 +225,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_BLASTOISE] = { .learnset = {
@@ -254,6 +256,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CATERPIE] = { .learnset = {
@@ -1346,6 +1349,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GOLDUCK] = { .learnset = {
@@ -1377,6 +1381,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MANKEY] = { .learnset = {
@@ -1511,6 +1516,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_POLIWHIRL] = { .learnset = {
@@ -1540,6 +1546,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_POLIWRATH] = { .learnset = {
@@ -1572,6 +1579,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_ABRA] = { .learnset = {
@@ -1831,6 +1839,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_TENTACRUEL] = { .learnset = {
@@ -1857,6 +1866,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GEODUDE] = { .learnset = {
@@ -2163,6 +2173,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_DEWGONG] = { .learnset = {
@@ -2187,6 +2198,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GRIMER] = { .learnset = {
@@ -2266,6 +2278,7 @@ const union {
         .ATTRACT = TRUE,
         .SURF = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CLOYSTER] = { .learnset = {
@@ -2288,6 +2301,7 @@ const union {
         .ATTRACT = TRUE,
         .SURF = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GASTLY] = { .learnset = {
@@ -2478,6 +2492,7 @@ const union {
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_KINGLER] = { .learnset = {
@@ -2505,6 +2520,7 @@ const union {
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_VOLTORB] = { .learnset = {
@@ -2989,6 +3005,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SEADRA] = { .learnset = {
@@ -3011,6 +3028,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GOLDEEN] = { .learnset = {
@@ -3080,6 +3098,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_STARMIE] = { .learnset = {
@@ -3108,6 +3127,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MR_MIME] = { .learnset = {
@@ -3339,6 +3359,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LAPRAS] = { .learnset = {
@@ -3370,6 +3391,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_DITTO] = { .learnset = {
@@ -3418,6 +3440,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_JOLTEON] = { .learnset = {
@@ -3517,6 +3540,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_OMASTAR] = { .learnset = {
@@ -3543,6 +3567,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_KABUTO] = { .learnset = {
@@ -3601,6 +3626,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_AERODACTYL] = { .learnset = {
@@ -3845,6 +3871,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MEWTWO] = { .learnset = {
@@ -3952,6 +3979,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CHIKORITA] = { .learnset = {
@@ -4126,6 +4154,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CROCONAW] = { .learnset = {
@@ -4156,6 +4185,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_FERALIGATR] = { .learnset = {
@@ -4189,6 +4219,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SENTRET] = { .learnset = {
@@ -4444,6 +4475,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LANTURN] = { .learnset = {
@@ -4470,6 +4502,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_PICHU] = { .learnset = {
@@ -4779,6 +4812,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_AZUMARILL] = { .learnset = {
@@ -4807,6 +4841,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SUDOWOODO] = { .learnset = {
@@ -4862,6 +4897,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_HOPPIP] = { .learnset = {
@@ -5047,6 +5083,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_QUAGSIRE] = { .learnset = {
@@ -5080,6 +5117,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_ESPEON] = { .learnset = {
@@ -5192,6 +5230,7 @@ const union {
         .FLASH = TRUE,
         .ROCK_SMASH = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MISDREAVUS] = { .learnset = {
@@ -5488,6 +5527,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SCIZOR] = { .learnset = {
@@ -5781,6 +5821,7 @@ const union {
         .SURF = TRUE,
         .STRENGTH = TRUE,
         .ROCK_SMASH = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_REMORAID] = { .learnset = {
@@ -5807,6 +5848,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_OCTILLERY] = { .learnset = {
@@ -5835,6 +5877,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_DELIBIRD] = { .learnset = {
@@ -5880,6 +5923,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SKARMORY] = { .learnset = {
@@ -5982,6 +6026,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_PHANPY] = { .learnset = {
@@ -6362,6 +6407,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LARVITAR] = { .learnset = {
@@ -6490,6 +6536,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_HO_OH] = { .learnset = {
@@ -6825,6 +6872,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MARSHTOMP] = { .learnset = {
@@ -6852,6 +6900,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SWAMPERT] = { .learnset = {
@@ -6883,6 +6932,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_POOCHYENA] = { .learnset = {
@@ -7103,6 +7153,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LUDICOLO] = { .learnset = {
@@ -7135,6 +7186,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SEEDOT] = { .learnset = {
@@ -7523,6 +7575,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_WAILORD] = { .learnset = {
@@ -7550,6 +7603,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SKITTY] = { .learnset = {
@@ -7803,6 +7857,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_WHISCASH] = { .learnset = {
@@ -7830,6 +7885,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LUVDISC] = { .learnset = {
@@ -7852,6 +7908,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CORPHISH] = { .learnset = {
@@ -7912,6 +7969,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_FEEBAS] = { .learnset = {
@@ -7933,6 +7991,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_MILOTIC] = { .learnset = {
@@ -7957,6 +8016,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CARVANHA] = { .learnset = {
@@ -7981,6 +8041,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SHARPEDO] = { .learnset = {
@@ -8011,6 +8072,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_TRAPINCH] = { .learnset = {
@@ -8256,6 +8318,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_SEALEO] = { .learnset = {
@@ -8283,6 +8346,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_WALREIN] = { .learnset = {
@@ -8311,6 +8375,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_CACNEA] = { .learnset = {
@@ -9087,6 +9152,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_HUNTAIL] = { .learnset = {
@@ -9111,6 +9177,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GOREBYSS] = { .learnset = {
@@ -9136,6 +9203,7 @@ const union {
         .SURF = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_ABSOL] = { .learnset = {
@@ -9319,6 +9387,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_ARON] = { .learnset = {
@@ -9929,6 +9998,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_GROUDON] = { .learnset = {
@@ -10003,6 +10073,7 @@ const union {
         .ROCK_SMASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LATIAS] = { .learnset = {
@@ -10043,6 +10114,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_LATIOS] = { .learnset = {
@@ -10083,6 +10155,7 @@ const union {
         .FLASH = TRUE,
         .WATERFALL = TRUE,
         .DIVE = TRUE,
+        .WHIRLPOOL = TRUE,
     } },
 
     [SPECIES_JIRACHI] = { .learnset = {
