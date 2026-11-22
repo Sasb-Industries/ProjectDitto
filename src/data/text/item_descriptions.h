@@ -1403,6 +1403,11 @@ static const u8 sHM07Desc[] = _(
     "with enough power\n"
     "to climb waterfalls.");
 
+static const u8 sHM09Desc[] = _(
+    "Traps the foe in a\n"
+    "vortex. Can cross\n"
+    "whirlpools.");
+
 static const u8 sHM08Desc[] = _(
     "Dives underwater\n"
     "the 1st turn, then\n"

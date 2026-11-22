@@ -104,6 +104,9 @@ ENV_MUSIC = {"TOWN": "MUS_RG_PEWTER", "ROUTE": "MUS_RG_ROUTE3", "CAVE": "MUS_RG_
              "DUNGEON": "MUS_RG_POKE_TOWER"}
 
 
+CELL_KIND = {"wall": (1, 0), "water": (0, 1), "land": (0, 3), "whirlpool": (1, 1)}  # collision, elevation
+
+
 def behavior_for(name):
     """Emerald behaviour for a Crystal collision constant name (without COLL_)."""
     if name is None:
@@ -114,7 +117,11 @@ def behavior_for(name):
         return "MB_LONG_GRASS"
     if name.startswith("WATERFALL"):
         return "MB_WATERFALL"
-    if name.startswith(("WATER", "CURRENT", "WHIRLPOOL")) or "BUOY" in name:
+    if name.startswith("WHIRLPOOL"):
+        return "MB_WHIRLPOOL"
+    if name.startswith("HEADBUTT_TREE"):
+        return "MB_HEADBUTT_TREE"
+    if name.startswith(("WATER", "CURRENT")) or "BUOY" in name:
         return "MB_POND_WATER"
     if name.startswith("ICE"):
         return "MB_ICE"
@@ -176,6 +183,52 @@ class Crystal:
         self.read_tilesets()
         self.read_maps()
         self.anim = AnimSimulator(self)
+        self.read_field_move_blocks()
+        self.read_treemons()
+
+    def read_field_move_blocks(self):
+        """{"cut"/"whirlpool": {tileset const: [(block, replacement)]}} for trees and whirlpools."""
+        self.field_blocks = {"cut": {}, "whirlpool": {}}
+        table, labels, current = None, {}, None
+        lines = list(asm_lines(self.root / "data/collision/field_move_blocks.asm"))
+        for line in lines:
+            if line.startswith("CutTreeBlockPointers"):
+                table = "cut"
+            elif line.startswith("WhirlpoolBlockPointers"):
+                table = "whirlpool"
+            elif line.startswith("dbw") and table:
+                ts, label = args(line)
+                labels[(table, label)] = ts
+            elif re.match(r"\.\w+:", line) and table:
+                current = labels.get((table, line.rstrip(":")))
+            elif line.startswith("db ") and current:
+                a = [x.strip() for x in line[3:].split(",")]
+                if a[0] == "-1" or len(a) < 3:
+                    current = None if a[0] == "-1" else current
+                    continue
+                num = lambda v: int(v.replace("$", ""), 16) if "$" in v else int(v)
+                if num(a[2]) == 0:  # animation 0 is a tree or whirlpool; 1 is cutting grass
+                    self.field_blocks[table].setdefault(current, []).append((num(a[0]), num(a[1])))
+
+    def read_treemons(self):
+        self.treemon_sets, current, which = {}, None, None
+        for line in asm_lines(self.root / "data/wild/treemons.asm"):
+            m = re.match(r"TreeMonSet_(\w+):", line)
+            if m:
+                current = m.group(1)
+                self.treemon_sets[current] = [[], []]
+                which = 0
+            elif line.startswith("db ") and current:
+                a = [x.strip() for x in line[3:].split(",")]
+                if a[0] == "-1":
+                    which += 1
+                elif which < 2 and len(a) == 3:
+                    self.treemon_sets[current][which].append((int(a[0]), a[1], int(a[2])))
+        self.treemon_map = {}
+        for line in asm_lines(self.root / "data/wild/treemon_maps.asm"):
+            if line.startswith("treemon_map"):
+                mapc, setc = args(line)
+                self.treemon_map[mapc] = camel(setc[len("TREEMON_SET_"):])
 
     def read_collision(self):
         self.coll_name, self.coll_value = {}, {}
@@ -190,6 +243,8 @@ class Crystal:
         self.permission = perm  # index -> "LAND_TILE" / "WATER_TILE" / "WALL_TILE | TALK" ...
 
     def coll_kind(self, value):
+        if (self.coll_name.get(value) or "").startswith("WHIRLPOOL"):
+            return "whirlpool"
         p = self.permission[value] if value < len(self.permission) else "WALL_TILE"
         return "wall" if "WALL" in p else "water" if "WATER" in p else "land"
 
@@ -573,6 +628,7 @@ class TilesetBuilder:
         self.metatiles, self.attrs, index = [], [], {}
         self.quad = []  # block -> [metatile id for TL, TR, BL, BR]
         self.quad_kind = []  # block -> [land/water/wall per quadrant]
+        self.quad_coll = []  # block -> Crystal collision value per quadrant
         for b in range(n_blocks):
             blk = meta[b * 16:(b + 1) * 16]
             cv = coll[b] if b < len(coll) else [0, 0, 0, 0]
@@ -591,6 +647,7 @@ class TilesetBuilder:
                 kinds.append(cr.coll_kind(cv[q]))
             self.quad.append(ids)
             self.quad_kind.append(kinds)
+            self.quad_coll.append(list(cv))
         if len(self.metatiles) > 1024:
             raise SystemExit(f"{const}: {len(self.metatiles)} metatiles, more than 1024")
         self.variants = {}  # key -> secondary symbol suffix
@@ -727,6 +784,50 @@ def map_palettes(cr, m):
 
 # ---------------------------------------------------------------------- main
 
+def is_cut_tree(o):
+    return o.get("graphics_id") == "OBJ_EVENT_GFX_CUTTABLE_TREE" and o.get("script") == "EventScript_CutTree"
+
+
+def field_moves_c(cr, builders, chosen, map_id):
+    """Whirlpool replacements and Headbutt tables for src/ditto_field_moves.c."""
+    species = set(re.findall(r"#define (SPECIES_\w+)", (REPO / "include/constants/species.h").read_text()))
+    out = ["// Generated by tools/ditto/import_crystal.py. Do not edit by hand.", ""]
+    externs, rows = set(), []
+    for ts, pairs in cr.field_blocks["whirlpool"].items():
+        b = builders.get(ts)
+        if not b:
+            continue
+        for block, repl in pairs:
+            for q in range(4):
+                if (cr.coll_name.get(b.quad_coll[block][q]) or "").startswith("WHIRLPOOL"):
+                    externs.add(b.sym)
+                    rows.append(f"    {{ &gTileset_{b.sym}, {b.quad[block][q]}, {b.quad[repl][q]} }},")
+    out += [f"extern const struct Tileset gTileset_{s};" for s in sorted(externs)] + [""]
+    out.append("static const struct FieldMoveReplacement sWhirlpoolReplacements[] =\n{\n" + "\n".join(rows) + "\n};\n")
+    count = max(len(t) for sets in cr.treemon_sets.values() for t in sets)
+    out.append(f"#define TREEMON_COUNT {count}\n")
+    names = [n for n, (common, rare) in cr.treemon_sets.items() if common]
+    for n in names:
+        for which, table in zip(("Common", "Rare"), cr.treemon_sets[n]):
+            entries = []
+            for pct, sp, lvl in table + [(0, "NONE", 0)] * (count - len(table)):
+                const = "SPECIES_" + sp
+                if const not in species:
+                    raise SystemExit(f"treemon species {sp} has no Emerald constant")
+                entries.append(f"    {{ {pct}, {const}, {lvl} }},")
+            out.append(f"static const struct TreeMon sTreeMons_{n}_{which}[] =\n{{\n" + "\n".join(entries) + "\n};")
+    out.append("\nstatic const struct TreeMonSet sTreeMonSets[] =\n{\n"
+               + "\n".join(f"    {{ sTreeMons_{n}_Common, sTreeMons_{n}_Rare }}," for n in names) + "\n};\n")
+    maps = []
+    for m in sorted(chosen, key=lambda m: m["const"]):
+        n = cr.treemon_map.get(m["const"])
+        if n in names:
+            mid = map_id[m["const"]]
+            maps.append(f"    {{ MAP_GROUP({mid}), MAP_NUM({mid}), {names.index(n)} }},")
+    out.append("static const struct TreeMonMap sTreeMonMaps[] =\n{\n" + "\n".join(maps) + "\n};")
+    (REPO / "src/data/johto_field_moves.h").write_text("\n".join(out) + "\n")
+
+
 def load_em_behaviors():
     body = re.search(r"enum\s*\{(.*?)\};", (REPO / "include/constants/metatile_behaviors.h").read_text(), re.S).group(1)
     body = re.sub(r"//.*", "", body)
@@ -802,7 +903,7 @@ def main():
     anim_c(builders.values())
 
     # 4. layouts: one per (block file, tileset, variant)
-    layout_of, new_layouts, seen = {}, [], {}
+    layout_of, new_layouts, seen, cut_trees = {}, [], {}, {}
     for m in sorted(chosen, key=lambda m: m["const"]):
         key = layout_key[m["const"]]
         if key in seen:
@@ -817,16 +918,22 @@ def main():
         w, h = m["size"]
         blk = key[0].read_bytes()
         cells = [0] * (4 * w * h)
+        cut = dict(cr.field_blocks["cut"].get(m["tileset"], []))
+        cut_trees[lid] = []
         for by in range(h):
             for bx in range(w):
                 bid = blk[by * w + bx] if by * w + bx < len(blk) else 0
                 if bid >= len(b.quad):
                     bid = 0
                 for q in range(4):
-                    kind = b.quad_kind[bid][q]
-                    coll, elev = {"wall": (1, 0), "water": (0, 1), "land": (0, 3)}[kind]
+                    src = bid
                     x, y = 2 * bx + q % 2, 2 * by + q // 2
-                    cells[y * 2 * w + x] = b.quad[bid][q] | (coll << 10) | (elev << 12)
+                    if bid in cut and (cr.coll_name.get(b.quad_coll[bid][q]) or "").startswith("CUT_TREE"):
+                        # The tree becomes Emerald's cuttable-tree object over the cleared ground.
+                        src = cut[bid]
+                        cut_trees[lid].append((x, y))
+                    coll, elev = CELL_KIND[b.quad_kind[src][q]]
+                    cells[y * 2 * w + x] = b.quad[src][q] | (coll << 10) | (elev << 12)
         d = REPO / "data/layouts" / name
         d.mkdir(parents=True, exist_ok=True)
         (d / "map.bin").write_bytes(struct.pack(f"<{len(cells)}H", *cells))
@@ -916,9 +1023,22 @@ def main():
             old = json.loads(mj.read_text())
             for key in ("object_events", "coord_events", "bg_events"):
                 out[key] = old.get(key, [])
+        # Generated cut trees are rebuilt every run; everything else added by hand is kept.
+        out["object_events"] = [o for o in out["object_events"] if not is_cut_tree(o)]
+        trees = cut_trees.get(layout_of[c], [])
+        if len(trees) > 15:
+            raise SystemExit(f"{map_name[c]}: more cut trees than temporary flags")
+        for i, (x, y) in enumerate(trees):
+            out["object_events"].append({
+                "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE", "x": x, "y": y, "elevation": 3,
+                "movement_type": "MOVEMENT_TYPE_LOOK_AROUND", "movement_range_x": 0, "movement_range_y": 0,
+                "trainer_type": "TRAINER_TYPE_NONE", "trainer_sight_or_berry_tree_id": "0",
+                "script": "EventScript_CutTree", "flag": f"FLAG_TEMP_{0x11 + i:X}"})
         mj.write_text(json.dumps(out, indent=2) + "\n")
         if not (d / "scripts.inc").exists():
             (d / "scripts.inc").write_text(f"{map_name[c]}_MapScripts::\n\t.byte 0\n")
+
+    field_moves_c(cr, builders, chosen, map_id)
 
     # 7. map groups and script includes
     ours_maps = {n for g in ours_groups for n in em_groups[g]}

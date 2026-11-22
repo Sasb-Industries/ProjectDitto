@@ -188,6 +188,10 @@ gSpecials::
 	def_special UpdateTrainerFanClubGameClear
 	def_special Script_TryGainNewFanFromCounter
 	def_special RockSmashWildEncounter
+	def_special DittoFindWhirlpoolUser
+	def_special DittoStartFieldMoveShowMon
+	def_special DittoClearWhirlpool
+	def_special DittoHeadbuttTree
 	def_special GabbyAndTyGetBattleNum
 	def_special GabbyAndTyAfterInterview
 	def_special GabbyAndTyBeforeInterview

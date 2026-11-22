@@ -6,8 +6,8 @@ enum {
     MB_SECRET_BASE_WALL,
     MB_TALL_GRASS,
     MB_LONG_GRASS,
-    MB_UNUSED_04,
-    MB_UNUSED_05,
+    MB_HEADBUTT_TREE, // Project Ditto (was MB_UNUSED_04)
+    MB_WHIRLPOOL,     // Project Ditto (was MB_UNUSED_05)
     MB_DEEP_SAND,
     MB_SHORT_GRASS,
     MB_CAVE,
