@@ -175,6 +175,7 @@ class Crystal:
         self.read_palettes()
         self.read_tilesets()
         self.read_maps()
+        self.anim = AnimSimulator(self)
 
     def read_collision(self):
         self.coll_name, self.coll_value = {}, {}
@@ -373,12 +374,165 @@ def write_pal(path, colours):
     lines = ["JASC-PAL", "0100", "16"]
     for r, g, b in colours:
         lines.append(f"{r * 255 // 31} {g * 255 // 31} {b * 255 // 31}")
-    path.write_text("\n".join(lines) + "\n")
+    path.write_bytes(("\r\n".join(lines) + "\r\n").encode())  # .gitattributes stores .pal as CRLF
 
 
 def gba_palette(gbc):
     """4 GBC colours -> 16-colour GBA palette with the GBC colours at 1-4."""
     return [(0, 0, 0)] + list(gbc) + [(0, 0, 0)] * 11
+
+
+# ---------------------------------------------------------------- animations
+
+def encode_2bpp(px):
+    out = bytearray()
+    for y in range(8):
+        lo = hi = 0
+        for x in range(8):
+            c = px[y * 8 + x]
+            lo |= (c & 1) << (7 - x)
+            hi |= ((c >> 1) & 1) << (7 - x)
+        out += bytes((lo, hi))
+    return out
+
+
+def decode_2bpp(data):
+    return [((data[2 * y] >> (7 - x)) & 1) | (((data[2 * y + 1] >> (7 - x)) & 1) << 1)
+            for y in range(8) for x in range(8)]
+
+
+class AnimSimulator:
+    """Runs Crystal's tile-animation script (data/tileset_anims.asm) frame by frame,
+    so the game can replay the exact tile contents without reimplementing each routine."""
+
+    def __init__(self, cr):
+        self.cr = cr
+        engine = (cr.root / "engine/tilesets/tileset_anims.asm").read_text()
+        incbin = dict(re.findall(r'^(\w+):\s*INCBIN "([^"]+)"', engine, re.M))
+        def png_tiles(path):
+            img = Image.open(cr.root / path.replace(".2bpp", ".png")).convert("L")
+            return [encode_2bpp(tile_pixels(img, i)) for i in range((img.width // 8) * (img.height // 8))]
+        self.pointers = {}
+        for name, tile, src in re.findall(r"^(\w+):\s*dw vTiles2 tile \$(\w+),\s*(\w+)", engine, re.M):
+            self.pointers[name] = (int(tile, 16), png_tiles(incbin[src]))
+        g = lambda f: png_tiles(f"gfx/tilesets/{f}.2bpp")
+        self.water = [t for t in g("water/water")]
+        self.flower = [g("flower/cgb_1")[0], g("flower/cgb_2")[0]]
+        self.fountain = [g(f"fountain/{i}")[0] for i in range(1, 6)]
+        self.lava = [g(f"lava/{i}")[0] for i in range(1, 5)]
+        self.tree = [g(f"forest-tree/{i}")[0] for i in range(1, 5)]
+        self.scripts, pending, last_was_frame = {}, [], False
+        for line in asm_lines(cr.root / "data/tileset_anims.asm"):
+            m = re.match(r"(\w+):", line)
+            if m:
+                if last_was_frame:
+                    pending = []  # a label after a script starts a new script
+                pending.append(m.group(1))
+                self.scripts[m.group(1)] = []
+                last_was_frame = False
+            elif line.startswith("tileframe"):
+                a = args(line)
+                for p in pending:
+                    self.scripts[p].append((a[0], a[1] if len(a) > 1 else None))
+                last_was_frame = True
+            else:
+                pending, last_was_frame = [], False
+
+    @staticmethod
+    def tile_arg(arg):
+        m = re.match(r"vTiles2 tile \$(\w+)", arg or "")
+        return int(m.group(1), 16) if m else None
+
+    def run(self, script_name, initial):
+        """initial: {crystal tile id: 16-byte 2bpp}. Returns (period, {tile: [state per frame]})."""
+        script = self.scripts.get(script_name) or []
+        if not any(f not in ("WaitTileAnimation", "DoneTileAnimation", "StandingTileFrame8",
+                             "StandingTileFrame", "AnimateWaterPalette", "FlickeringCaveEntrancePalette")
+                   for f, _ in script):
+            return 0, {}
+        touched = {0x03, 0x0C, 0x0F, 0x38, 0x5B}
+        touched |= {self.tile_arg(a) for _, a in script if self.tile_arg(a) is not None}
+        touched |= {self.pointers[a][0] for _, a in script if a in self.pointers}
+        vram = {t: bytearray(d) for t, d in initial.items() if t in touched}
+        buf = bytearray(16)
+        timer = frame = 0
+
+        def write(tile, data):
+            vram[tile] = bytearray(data)
+
+        def step():
+            nonlocal timer, frame, buf
+            fn, arg = script[frame]
+            frame += 1
+            t = self.tile_arg(arg)
+            if fn == "DoneTileAnimation":
+                frame = 0
+            elif fn == "StandingTileFrame8":
+                timer = (timer + 1) & 7
+            elif fn == "StandingTileFrame":
+                timer = (timer + 1) & 7  # every reader uses only the low 3 bits
+            elif fn == "AnimateWaterTile":
+                write(t, self.water[(timer >> 1) & 3])
+            elif fn == "AnimateFlowerTile":
+                write(0x03, self.flower[(timer >> 1) & 1])
+            elif fn == "AnimateFountainTile":
+                write(t, self.fountain[[0, 1, 2, 3, 2, 3, 4, 0][timer & 7]])
+            elif fn in ("ForestTreeLeftAnimation", "ForestTreeLeftAnimation2"):
+                write(0x0C, self.tree[0])  # only animates during the Celebi event
+            elif fn in ("ForestTreeRightAnimation", "ForestTreeRightAnimation2"):
+                write(0x0F, self.tree[2])
+            elif fn == "AnimateLavaBubbleTile1":
+                write(0x5B, self.lava[(((timer & 6) >> 1) + 2) & 3])
+            elif fn == "AnimateLavaBubbleTile2":
+                write(0x38, self.lava[(timer >> 1) & 3])
+            elif fn == "AnimateTowerPillarTile":
+                dest, frames = self.pointers[arg]
+                write(dest, frames[[0, 1, 2, 3, 4, 3, 2, 1][timer & 7]])
+            elif fn == "AnimateWhirlpoolTile":
+                dest, frames = self.pointers[arg]
+                write(dest, frames[timer & 3])
+            elif fn == "ReadTileToAnimBuffer":
+                buf = bytearray(vram.get(t, bytes(16)))
+            elif fn == "WriteTileFromAnimBuffer":
+                write(t, buf)
+            elif fn in ("ScrollTileRightLeft", "ScrollTileUpDown"):
+                timer = (timer + 1) & 7
+                if fn == "ScrollTileRightLeft":
+                    buf = scroll(buf, "left" if timer & 4 else "right")
+                else:
+                    buf = scroll(buf, "down" if timer & 4 else "up")
+            elif fn in ("ScrollTileLeft", "ScrollTileRight", "ScrollTileUp", "ScrollTileDown"):
+                buf = scroll(buf, fn[len("ScrollTile"):].lower())
+            # palette animations and waits change no tiles
+
+        def scroll(b, way):
+            b = bytearray(b)
+            if way == "left":
+                return bytearray(((x << 1) | (x >> 7)) & 0xFF for x in b)
+            if way == "right":
+                return bytearray(((x >> 1) | (x << 7)) & 0xFF for x in b)
+            rows = [b[i:i + 2] for i in range(0, 16, 2)]
+            rows = rows[-1:] + rows[:-1] if way == "down" else rows[1:] + rows[:1]
+            return bytearray(x for r in rows for x in r)
+
+        def state():
+            return (timer, frame, bytes(buf), tuple(sorted((k, bytes(v)) for k, v in vram.items())))
+
+        seen, history = {}, []
+        while True:
+            st = state()
+            if st in seen:
+                start = seen[st]
+                break
+            seen[st] = len(history)
+            history.append({k: bytes(v) for k, v in vram.items()})
+            step()
+            if len(history) > 20000:
+                raise SystemExit(f"{script_name}: animation does not repeat")
+        cycle = history[start:]
+        tiles = {k for frame_state in cycle for k in frame_state
+                 if len({fs.get(k) for fs in cycle}) > 1}
+        return len(cycle), {k: [fs[k] for fs in cycle] for k in sorted(tiles)}
 
 
 # ------------------------------------------------------------------ tilesets
@@ -440,6 +594,16 @@ class TilesetBuilder:
         if len(self.metatiles) > 1024:
             raise SystemExit(f"{const}: {len(self.metatiles)} metatiles, more than 1024")
         self.variants = {}  # key -> secondary symbol suffix
+        # tile animations: Crystal tile id -> GBA primary tile index
+        self.anim_period, self.anims = 0, {}
+        script = f"Tileset{ts['name']}Anim"
+        initial = {t: encode_2bpp(self.src_tiles[t]) for t in range(min(0x60, n_src))}
+        period, anims = cr.anim.run(script, initial)
+        if self.roofed:
+            anims = {t: v for t, v in anims.items() if not ROOF_FIRST <= t < ROOF_FIRST + ROOF_LEN}
+        if anims:
+            self.anim_period = period
+            self.anims = {1 + t: frames for t, frames in anims.items()}
 
     def metatile_bytes(self, mts):
         out = bytearray()
@@ -493,14 +657,47 @@ class TilesetBuilder:
         return made
 
 
-def tileset_c(made):
+def anim_c(builders):
+    """Generated tile animations for the Johto primaries (included by src/tileset_anims.c)."""
+    out = ["// Generated by tools/ditto/import_crystal.py. Do not edit by hand.",
+           "// Johto tile animations, replayed frame by frame from Crystal's animation scripts.", ""]
+    protos = []
+    for b in builders:
+        if not b.anims:
+            continue
+        sym = b.sym
+        calls = []
+        for n, (gba_tile, states) in enumerate(sorted(b.anims.items())):
+            frames = list(dict.fromkeys(states))
+            seq = [frames.index(s) for s in states]
+            words = []
+            for f in frames:
+                px = [c + 1 for c in decode_2bpp(f)]
+                data = bytes((px[i] | (px[i + 1] << 4)) for i in range(0, 64, 2))
+                words.append(", ".join(f"0x{data[i] | (data[i + 1] << 8):04X}" for i in range(0, 32, 2)))
+            out.append(f"static const u16 s{sym}Anim{n}_Frames[][16] =\n{{\n"
+                       + "".join(f"    {{ {w} }},\n" for w in words) + "};")
+            out.append(f"static const u8 s{sym}Anim{n}_Sequence[] = {{ {', '.join(map(str, seq))} }};\n")
+            calls.append(f"    if (timer == 0 || s{sym}Anim{n}_Sequence[timer] != s{sym}Anim{n}_Sequence[timer - 1])\n"
+                         f"        AppendTilesetAnimToBuffer(s{sym}Anim{n}_Frames[s{sym}Anim{n}_Sequence[timer]], "
+                         f"(u16 *)(BG_VRAM + TILE_OFFSET_4BPP({gba_tile})), TILE_SIZE_4BPP);")
+        out.append(f"static void TilesetAnim_{sym}(u16 timer)\n{{\n" + "\n".join(calls) + "\n}\n")
+        out.append(f"void InitTilesetAnim_{sym}(void)\n{{\n    sPrimaryTilesetAnimCounter = 0;\n"
+                   f"    sPrimaryTilesetAnimCounterMax = {b.anim_period};\n"
+                   f"    sPrimaryTilesetAnimCallback = TilesetAnim_{sym};\n}}\n")
+        protos.append(f"void InitTilesetAnim_{sym}(void);")
+    (REPO / "src/data/tilesets/johto_anims.h").write_text("\n".join(out))
+    replace_block(REPO / "include/tileset_anims.h", "\n".join(protos))
+
+
+def tileset_c(made, callbacks):
     headers, graphics, metatiles = [], [], []
     for sym, d, secondary in made:
         headers.append(
             f"const struct Tileset gTileset_{sym} =\n{{\n    .isCompressed = TRUE,\n"
             f"    .isSecondary = {'TRUE' if secondary else 'FALSE'},\n    .tiles = gTilesetTiles_{sym},\n"
             f"    .palettes = gTilesetPalettes_{sym},\n    .metatiles = gMetatiles_{sym},\n"
-            f"    .metatileAttributes = gMetatileAttributes_{sym},\n    .callback = NULL,\n}};\n")
+            f"    .metatileAttributes = gMetatileAttributes_{sym},\n    .callback = {callbacks.get(sym, 'NULL')},\n}};\n")
         pals = "\n".join(f'\tINCGFX_U16("{d}/palettes/{i:02d}.pal", ".gbapal"),' for i in range(16))
         graphics.append(
             f'const u32 gTilesetTiles_{sym}[] = INCGFX_U32("{d}/tiles.png", ".4bpp.lz");\n\n'
@@ -601,7 +798,8 @@ def main():
     made = []
     for b in builders.values():
         made += b.write()
-    tileset_c(made)
+    tileset_c(made, {b.sym: f"InitTilesetAnim_{b.sym}" for b in builders.values() if b.anims})
+    anim_c(builders.values())
 
     # 4. layouts: one per (block file, tileset, variant)
     layout_of, new_layouts, seen = {}, [], {}

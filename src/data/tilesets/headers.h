@@ -1563,7 +1563,7 @@ const struct Tileset gTileset_JohtoOutdoor =
     .palettes = gTilesetPalettes_JohtoOutdoor,
     .metatiles = gMetatiles_JohtoOutdoor,
     .metatileAttributes = gMetatileAttributes_JohtoOutdoor,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoOutdoor,
 };
 
 const struct Tileset gTileset_JohtoOutdoor_Cave =
@@ -1695,7 +1695,7 @@ const struct Tileset gTileset_JohtoEliteFourRoom =
     .palettes = gTilesetPalettes_JohtoEliteFourRoom,
     .metatiles = gMetatiles_JohtoEliteFourRoom,
     .metatileAttributes = gMetatileAttributes_JohtoEliteFourRoom,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoEliteFourRoom,
 };
 
 const struct Tileset gTileset_JohtoEliteFourRoom_Cave =
@@ -1728,7 +1728,7 @@ const struct Tileset gTileset_JohtoTower =
     .palettes = gTilesetPalettes_JohtoTower,
     .metatiles = gMetatiles_JohtoTower,
     .metatileAttributes = gMetatileAttributes_JohtoTower,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoTower,
 };
 
 const struct Tileset gTileset_JohtoTower_Cave =
@@ -1772,7 +1772,7 @@ const struct Tileset gTileset_JohtoCave =
     .palettes = gTilesetPalettes_JohtoCave,
     .metatiles = gMetatiles_JohtoCave,
     .metatileAttributes = gMetatileAttributes_JohtoCave,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoCave,
 };
 
 const struct Tileset gTileset_JohtoCave_Cave =
@@ -1794,7 +1794,7 @@ const struct Tileset gTileset_JohtoPark =
     .palettes = gTilesetPalettes_JohtoPark,
     .metatiles = gMetatiles_JohtoPark,
     .metatileAttributes = gMetatileAttributes_JohtoPark,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoPark,
 };
 
 const struct Tileset gTileset_JohtoPark_OutdoorDungeons =
@@ -2047,7 +2047,7 @@ const struct Tileset gTileset_JohtoForest =
     .palettes = gTilesetPalettes_JohtoForest,
     .metatiles = gMetatiles_JohtoForest,
     .metatileAttributes = gMetatileAttributes_JohtoForest,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoForest,
 };
 
 const struct Tileset gTileset_JohtoForest_Cave =
@@ -2069,7 +2069,7 @@ const struct Tileset gTileset_JohtoDarkCave =
     .palettes = gTilesetPalettes_JohtoDarkCave,
     .metatiles = gMetatiles_JohtoDarkCave,
     .metatileAttributes = gMetatileAttributes_JohtoDarkCave,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoDarkCave,
 };
 
 const struct Tileset gTileset_JohtoDarkCave_Cave =
@@ -2091,7 +2091,7 @@ const struct Tileset gTileset_JohtoIcePath =
     .palettes = gTilesetPalettes_JohtoIcePath,
     .metatiles = gMetatiles_JohtoIcePath,
     .metatileAttributes = gMetatileAttributes_JohtoIcePath,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoIcePath,
 };
 
 const struct Tileset gTileset_JohtoIcePath_IcePath =
@@ -2135,7 +2135,7 @@ const struct Tileset gTileset_JohtoOutdoorModern =
     .palettes = gTilesetPalettes_JohtoOutdoorModern,
     .metatiles = gMetatiles_JohtoOutdoorModern,
     .metatileAttributes = gMetatileAttributes_JohtoOutdoorModern,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoOutdoorModern,
 };
 
 const struct Tileset gTileset_JohtoOutdoorModern_OutdoorAzalea =
@@ -2212,7 +2212,7 @@ const struct Tileset gTileset_JohtoPort =
     .palettes = gTilesetPalettes_JohtoPort,
     .metatiles = gMetatiles_JohtoPort,
     .metatileAttributes = gMetatileAttributes_JohtoPort,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoPort,
 };
 
 const struct Tileset gTileset_JohtoPort_OutdoorFastShip =
@@ -2234,7 +2234,7 @@ const struct Tileset gTileset_JohtoKanto =
     .palettes = gTilesetPalettes_JohtoKanto,
     .metatiles = gMetatiles_JohtoKanto,
     .metatileAttributes = gMetatileAttributes_JohtoKanto,
-    .callback = NULL,
+    .callback = InitTilesetAnim_JohtoKanto,
 };
 
 const struct Tileset gTileset_JohtoKanto_OutdoorSilver =
