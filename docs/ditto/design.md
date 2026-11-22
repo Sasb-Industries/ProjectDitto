@@ -94,3 +94,4 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 - 2026-11-13: repo set up, unmodified Emerald builds and runs from source.
 - 2026-11-13: Kanto mainland imported from FireRed (256 maps, 51 tilesets) as empty, walkable maps. A sailor in Littleroot Town and one in Pallet Town carry you between the regions. This is the proposed first milestone minus the trainer battle. Kanto still needs NPCs, scripts, trainers, wild encounters, tile animations and a town map.
 - 2026-11-21: Johto imported from pokecrystal (230 maps, 34 tilesets) as empty, walkable maps with Crystal's own graphics. A sailor in Pallet Town and one in New Bark Town carry you between Kanto and Johto.
+- 2026-11-22: Johto gets tile animations, Crystal's morning/day/night palettes, map names on entry, cut trees, HM09 Whirlpool and Headbutt trees. Day/night runs everywhere (tinted in Hoenn and Kanto). Gold/Silver music converted in its original Game Boy sound.

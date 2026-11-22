@@ -46,3 +46,6 @@ prefabs.json
 /pokeemerald-*.png
 /pokeemerald_modern-*.png
 .porydaw/
+
+# Claude Code agent worktrees
+.claude/worktrees/
