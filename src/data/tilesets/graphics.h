@@ -2758,3 +2758,1897 @@ const u16 gTilesetPalettes_KantoViridianGym[][16] =
 	INCGFX_U16("data/tilesets/secondary/kanto_viridian_gym/palettes/15.pal", ".gbapal"),
 };
 // END ditto:import_frlg
+
+// BEGIN ditto:import_crystal (generated, do not edit by hand)
+const u32 gTilesetTiles_JohtoPokecenter[] = INCGFX_U32("data/tilesets/primary/johto_pokecenter/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPokecenter[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_pokecenter/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPokecenter_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_pokecenter_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPokecenter_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_pokecenter_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoChampionsRoom[] = INCGFX_U32("data/tilesets/primary/johto_champions_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoChampionsRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_champions_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoChampionsRoom_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_champions_room_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoChampionsRoom_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_champions_room_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoHouse[] = INCGFX_U32("data/tilesets/primary/johto_house/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoHouse[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_house/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoHouse_House[] = INCGFX_U32("data/tilesets/secondary/johto_house_house/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoHouse_House[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_house_house/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoGameCorner[] = INCGFX_U32("data/tilesets/primary/johto_game_corner/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoGameCorner[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_game_corner/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoGameCorner_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_game_corner_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoGameCorner_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_game_corner_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoMart[] = INCGFX_U32("data/tilesets/primary/johto_mart/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoMart[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_mart/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoMart_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_mart_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoMart_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_mart_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoGate[] = INCGFX_U32("data/tilesets/primary/johto_gate/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoGate[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_gate/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoGate_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_gate_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoGate_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoGate_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_gate_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoGate_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_gate_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTraditionalHouse[] = INCGFX_U32("data/tilesets/primary/johto_traditional_house/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTraditionalHouse[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_traditional_house/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTraditionalHouse_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_traditional_house_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTraditionalHouse_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_traditional_house_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor[] = INCGFX_U32("data/tilesets/primary/johto_outdoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorBlackthorn[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorBlackthorn[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_blackthorn/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorCherrygrove[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorCherrygrove[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cherrygrove/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorCianwood[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorCianwood[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_cianwood/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorDungeons[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorDungeons[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_dungeons/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorEcruteak[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorEcruteak[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_ecruteak/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorLakeOfRage[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorLakeOfRage[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_lake_of_rage/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorMahogany[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorMahogany[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_mahogany/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorNewBark[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorNewBark[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_new_bark/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorOlivine[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_olivine/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorOlivine[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_olivine/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoor_OutdoorViolet[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_outdoor_violet/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoor_OutdoorViolet[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_outdoor_violet/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoEliteFourRoom[] = INCGFX_U32("data/tilesets/primary/johto_elite_four_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoEliteFourRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_elite_four_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoEliteFourRoom_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_elite_four_room_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoEliteFourRoom_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoEliteFourRoom_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_elite_four_room_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoEliteFourRoom_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_elite_four_room_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTower[] = INCGFX_U32("data/tilesets/primary/johto_tower/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTower[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_tower/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTower_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_tower_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTower_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTower_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_tower_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTower_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTower_OutdoorFastShip[] = INCGFX_U32("data/tilesets/secondary/johto_tower_outdoor_fast_ship/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTower_OutdoorFastShip[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_tower_outdoor_fast_ship/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoCave[] = INCGFX_U32("data/tilesets/primary/johto_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoCave[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoCave_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_cave_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoCave_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_cave_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPark[] = INCGFX_U32("data/tilesets/primary/johto_park/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPark[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_park/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPark_OutdoorDungeons[] = INCGFX_U32("data/tilesets/secondary/johto_park_outdoor_dungeons/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPark_OutdoorDungeons[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_park_outdoor_dungeons/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoRadioTower[] = INCGFX_U32("data/tilesets/primary/johto_radio_tower/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoRadioTower[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_radio_tower/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoRadioTower_RadioTower[] = INCGFX_U32("data/tilesets/secondary/johto_radio_tower_radio_tower/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoRadioTower_RadioTower[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_radio_tower_radio_tower/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoRuinsOfAlph[] = INCGFX_U32("data/tilesets/primary/johto_ruins_of_alph/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoRuinsOfAlph[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ruins_of_alph/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoRuinsOfAlph_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_ruins_of_alph_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoRuinsOfAlph_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ruins_of_alph_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoFacility[] = INCGFX_U32("data/tilesets/primary/johto_facility/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoFacility[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_facility/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoFacility_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_facility_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoFacility_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoFacility_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_facility_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoFacility_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_facility_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoHoOhWordRoom[] = INCGFX_U32("data/tilesets/primary/johto_ho_oh_word_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoHoOhWordRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ho_oh_word_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoHoOhWordRoom_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_ho_oh_word_room_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoHoOhWordRoom_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ho_oh_word_room_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoKabutoWordRoom[] = INCGFX_U32("data/tilesets/primary/johto_kabuto_word_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoKabutoWordRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kabuto_word_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoKabutoWordRoom_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_kabuto_word_room_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoKabutoWordRoom_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kabuto_word_room_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOmanyteWordRoom[] = INCGFX_U32("data/tilesets/primary/johto_omanyte_word_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOmanyteWordRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_omanyte_word_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOmanyteWordRoom_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_omanyte_word_room_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOmanyteWordRoom_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_omanyte_word_room_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoAerodactylWordRoom[] = INCGFX_U32("data/tilesets/primary/johto_aerodactyl_word_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoAerodactylWordRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_aerodactyl_word_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoAerodactylWordRoom_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_aerodactyl_word_room_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoAerodactylWordRoom_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_aerodactyl_word_room_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoLighthouse[] = INCGFX_U32("data/tilesets/primary/johto_lighthouse/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoLighthouse[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lighthouse/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoLighthouse_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_lighthouse_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoLighthouse_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoLighthouse_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_lighthouse_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoLighthouse_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lighthouse_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoUnderground[] = INCGFX_U32("data/tilesets/primary/johto_underground/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoUnderground[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_underground/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoUnderground_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_underground_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoUnderground_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoUnderground_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_underground_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoUnderground_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_underground_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoForest[] = INCGFX_U32("data/tilesets/primary/johto_forest/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoForest[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_forest/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoForest_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_forest_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoForest_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_forest_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoDarkCave[] = INCGFX_U32("data/tilesets/primary/johto_dark_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoDarkCave[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_dark_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoDarkCave_Cave[] = INCGFX_U32("data/tilesets/secondary/johto_dark_cave_cave/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoDarkCave_Cave[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_dark_cave_cave/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoIcePath[] = INCGFX_U32("data/tilesets/primary/johto_ice_path/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoIcePath[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_ice_path/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoIcePath_IcePath[] = INCGFX_U32("data/tilesets/secondary/johto_ice_path_ice_path/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoIcePath_IcePath[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_ice_path_ice_path/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoLab[] = INCGFX_U32("data/tilesets/primary/johto_lab/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoLab[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_lab/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoLab_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_lab_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoLab_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_lab_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoorModern[] = INCGFX_U32("data/tilesets/primary/johto_outdoor_modern/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoorModern[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_outdoor_modern/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoorModern_OutdoorAzalea[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoorModern_OutdoorAzalea[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_azalea/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoOutdoorModern_OutdoorGoldenrod[] = INCGFX_U32("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoOutdoorModern_OutdoorGoldenrod[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_outdoor_modern_outdoor_goldenrod/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTrainStation[] = INCGFX_U32("data/tilesets/primary/johto_train_station/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTrainStation[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_train_station/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoTrainStation_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_train_station_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoTrainStation_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_train_station_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPokeComCenter[] = INCGFX_U32("data/tilesets/primary/johto_poke_com_center/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPokeComCenter[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_poke_com_center/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPokeComCenter_PokecomCenter[] = INCGFX_U32("data/tilesets/secondary/johto_poke_com_center_pokecom_center/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPokeComCenter_PokecomCenter[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_poke_com_center_pokecom_center/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPort[] = INCGFX_U32("data/tilesets/primary/johto_port/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPort[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_port/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPort_OutdoorFastShip[] = INCGFX_U32("data/tilesets/secondary/johto_port_outdoor_fast_ship/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPort_OutdoorFastShip[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_port_outdoor_fast_ship/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoKanto[] = INCGFX_U32("data/tilesets/primary/johto_kanto/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoKanto[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_kanto/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoKanto_OutdoorSilver[] = INCGFX_U32("data/tilesets/secondary/johto_kanto_outdoor_silver/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoKanto_OutdoorSilver[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_kanto_outdoor_silver/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoBattleTowerInside[] = INCGFX_U32("data/tilesets/primary/johto_battle_tower_inside/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoBattleTowerInside[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_inside/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoBattleTowerInside_BattleTowerInside[] = INCGFX_U32("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoBattleTowerInside_BattleTowerInside[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_inside_battle_tower_inside/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoBattleTowerOutside[] = INCGFX_U32("data/tilesets/primary/johto_battle_tower_outside/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoBattleTowerOutside[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_battle_tower_outside/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoBattleTowerOutside_OutdoorCianwood[] = INCGFX_U32("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoBattleTowerOutside_OutdoorCianwood[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_battle_tower_outside_outdoor_cianwood/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPlayersHouse[] = INCGFX_U32("data/tilesets/primary/johto_players_house/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPlayersHouse[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_house/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPlayersHouse_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_players_house_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPlayersHouse_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_house_indoor/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPlayersRoom[] = INCGFX_U32("data/tilesets/primary/johto_players_room/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPlayersRoom[][16] =
+{
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/primary/johto_players_room/palettes/15.pal", ".gbapal"),
+};
+
+const u32 gTilesetTiles_JohtoPlayersRoom_Indoor[] = INCGFX_U32("data/tilesets/secondary/johto_players_room_indoor/tiles.png", ".4bpp.lz");
+
+const u16 gTilesetPalettes_JohtoPlayersRoom_Indoor[][16] =
+{
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/00.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/01.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/02.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/03.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/04.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/05.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/06.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/07.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/08.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/09.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/10.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/11.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/12.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/13.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/14.pal", ".gbapal"),
+	INCGFX_U16("data/tilesets/secondary/johto_players_room_indoor/palettes/15.pal", ".gbapal"),
+};
+// END ditto:import_crystal

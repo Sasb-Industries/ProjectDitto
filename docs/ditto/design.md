@@ -48,7 +48,7 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 | Plots | Keep each region's storyline. Change them only where needed for one region to lead into the next, and keep those changes small, but a game that flows well comes first. |
 | Sevii Islands | In 1.0. |
 | Kanto and Sevii maps | Ported 1:1 from `pret/pokefirered`, with FireRed's tilesets. The player character keeps the Emerald look. Retiling to Emerald's style is a later tooling job. |
-| Johto maps | Ported 1:1. Source is CrystalDust's layouts if they are faithful to the originals; otherwise we write a converter from `pret/pokecrystal`. |
+| Johto maps | Converted 1:1 from `pret/pokecrystal` by `tools/ditto/import_crystal.py`, with Crystal's own tiles for now. GBA-style Johto tilesets come later, ideally CrystalDust's if its author agrees. |
 | Completeness | All 386 obtainable in one solo playthrough. Trade evolutions become item or level evolutions. All nine starters, both fossils of each pair and the event-only mythicals are obtainable in-game. |
 | Old Emerald features | Battle Frontier, contests and the rest stay for now. Nothing is cut yet. |
 | Map tooling | Porymap for humans, plus our own Python toolkit in `tools/ditto/` that AI agents drive. No custom map editor. |
@@ -77,11 +77,10 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 18. **Room for 16 boxes.** Free the two save blocks used by Trainer Hill and recorded battles (cuts those saves), store boxed Pokémon more compactly (more work, cuts nothing), or drop the backup save copy (last resort).
 19. **Fairy moves.** Gen 3 has only three moves that later became Fairy (Charm, Sweet Kiss, Moonlight), none of them attacks. Fairy Pokémon need attacking moves (Moonblast, Dazzling Gleam, Play Rough, Fairy Wind, Draining Kiss), which would be the first later-gen moves we add.
 20. **The rest of Gen 6's type changes.** Steel no longer resisting Ghost and Dark, and the Gen 6 retypings (Clefairy, Jigglypuff, Togepi, Snubbull and Marill lines, Mr. Mime, Ralts line, Mawile).
-21. **Johto source.** See "To investigate".
 
 ## To investigate (not decisions)
 
-- Johto source. Checked 2026-11-21: CrystalDust (Sierraffinity/CrystalDust, built on pokeemerald like us) has no licence and no commits since December 2022. Its Johto stops at Goldenrod and the National Park: New Bark to Goldenrod, Ruins of Alph, Union Cave, Ilex Forest, Slowpoke Well, Sprout Tower, Radio Tower, Dark Cave, plus Routes 29–36, 45 and 46. Ecruteak onwards is missing. It has GBA arrangements of about 20 Johto tracks. `pret/pokecrystal` is complete. Recommendation: write the converter from pokecrystal for all layouts, and ask CrystalDust's author for permission to use its tilesets and music.
+- Johto tilesets and music. CrystalDust (Sierraffinity/CrystalDust, built on pokeemerald like us) has GBA-style tilesets and about 20 Johto tracks, but covers only New Bark to Goldenrod, has no licence and no commits since December 2022. Someone should ask its author whether we can use its tilesets and music.
 - Save-file space. The unmodified game uses 99% of its main save block, and three regions need many more story flags. We will need to free or expand it early; this is probably the first real engineering problem.
 - Other systems that assume one region: the town map, Fly destinations, the Pokédex area screen.
 - How the physical/special split is best added to vanilla pokeemerald.
@@ -90,3 +89,4 @@ One Game Boy Advance game on the Emerald engine covering Hoenn, Kanto, the Sevii
 
 - 2026-11-13: repo set up, unmodified Emerald builds and runs from source.
 - 2026-11-13: Kanto mainland imported from FireRed (256 maps, 51 tilesets) as empty, walkable maps. A sailor in Littleroot Town and one in Pallet Town carry you between the regions. This is the proposed first milestone minus the trainer battle. Kanto still needs NPCs, scripts, trainers, wild encounters, tile animations and a town map.
+- 2026-11-21: Johto imported from pokecrystal (230 maps, 34 tilesets) as empty, walkable maps with Crystal's own graphics. A sailor in Pallet Town and one in New Bark Town carry you between Kanto and Johto.
