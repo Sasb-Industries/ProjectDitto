@@ -59,7 +59,17 @@ SKIP_GROUPS = {"CableClub"}
 EXTRA_LANDMARKS = {"LANDMARK_ROUTE_26", "LANDMARK_ROUTE_27", "LANDMARK_TOHJO_FALLS",
                    "LANDMARK_ROUTE_28", "LANDMARK_FAST_SHIP"}
 
-# Daytime palette indexes into bg_tiles.pal, per environment (data/maps/environment_colors.asm).
+# Palette indexes into bg_tiles.pal per environment and period (data/maps/environment_colors.asm).
+_OUT = {"morning": [0x00, 0x01, 0x02, 0x28, 0x04, 0x05, 0x06, 0x07],
+        "day": [0x08, 0x09, 0x0A, 0x28, 0x0C, 0x0D, 0x0E, 0x0F],
+        "night": [0x10, 0x11, 0x12, 0x29, 0x14, 0x15, 0x16, 0x17]}
+_IN = {"morning": [0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x07],
+       "day": [0x20, 0x21, 0x22, 0x23, 0x24, 0x25, 0x26, 0x07],
+       "night": [0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x07]}
+_DUN = {"morning": list(range(0x00, 0x08)), "day": list(range(0x08, 0x10)), "night": list(range(0x10, 0x18))}
+ENV_PERIOD_PALETTES = {"TOWN": _OUT, "ROUTE": _OUT, "INDOOR": _IN, "GATE": _IN,
+                       "CAVE": _DUN, "DUNGEON": _DUN, "ENVIRONMENT_5": _DUN}
+PERIODS = ("day", "morning", "night")
 ENV_PALETTES = {
     "TOWN": [0x08, 0x09, 0x0A, 0x28, 0x0C, 0x0D, 0x0E, 0x0F],
     "ROUTE": [0x08, 0x09, 0x0A, 0x28, 0x0C, 0x0D, 0x0E, 0x0F],
@@ -259,6 +269,7 @@ class Crystal:
                         for k, f in SPECIAL_PALETTES.items()}
         roof = rgbs(self.root / "gfx/tilesets/roofs.pal")
         self.roof_pals = [roof[i * 4:i * 4 + 2] for i in range(len(roof) // 4)]  # morn/day colours 1-2
+        self.roof_pals_night = [roof[i * 4 + 2:i * 4 + 4] for i in range(len(roof) // 4)]
         self.roof_gfx, groups = [], []
         for line in asm_lines(self.root / "data/maps/roofs.asm"):
             if line.startswith("INCBIN"):
@@ -651,6 +662,7 @@ class TilesetBuilder:
         if len(self.metatiles) > 1024:
             raise SystemExit(f"{const}: {len(self.metatiles)} metatiles, more than 1024")
         self.variants = {}  # key -> secondary symbol suffix
+        self.timed = {}  # secondary symbol -> {period: palette folder} for authored morning/night
         # tile animations: Crystal tile id -> GBA primary tile index
         self.anim_period, self.anims = 0, {}
         script = f"Tileset{ts['name']}Anim"
@@ -669,7 +681,7 @@ class TilesetBuilder:
         return bytes(out)
 
     def variant(self, pals, roof, tag):
-        key = (tuple(tuple(p) for p in pals), roof)
+        key = (tuple(tuple(tuple(c) for c in pals[p]) for p in PERIODS), roof)
         if key not in self.variants:
             name = f"{self.sym}_{tag}"
             n = 2
@@ -694,7 +706,8 @@ class TilesetBuilder:
         # INCBIN cannot include an empty file, so a secondary always has at least one metatile.
         over = self.metatiles[NUM_PRIMARY:] or [(0, 0, 0, 0)]
         over_attrs = self.attrs[NUM_PRIMARY:] or [0]
-        for (pals, roof), sym in sorted(self.variants.items(), key=lambda kv: kv[1]):
+        for (period_pals, roof), sym in sorted(self.variants.items(), key=lambda kv: kv[1]):
+            pals = period_pals[0]
             d = REPO / "data/tilesets/secondary" / f"johto_{snake(sym[len(PREFIX):])}"
             (d / "palettes").mkdir(parents=True, exist_ok=True)
             if roof is not None:
@@ -707,9 +720,18 @@ class TilesetBuilder:
             write_tiles_png([[c + 1 for c in t] for t in roof_tiles] or [[0] * 64], d / "tiles.png")
             (d / "metatiles.bin").write_bytes(self.metatile_bytes(over))
             (d / "metatile_attributes.bin").write_bytes(struct.pack(f"<{len(over)}H", *over_attrs))
-            for i in range(16):
-                gbc = pals[GBA_SLOT.index(i)] if i in GBA_SLOT[:7] else self.cr.bg_pals[0x08]
-                write_pal(d / "palettes" / f"{i:02d}.pal", gba_palette(gbc))
+            timed = {}
+            for period, ppals in zip(PERIODS, period_pals):
+                if period != "day" and ppals == period_pals[0]:
+                    continue
+                folder = d / ("palettes" if period == "day" else f"palettes_{period}")
+                folder.mkdir(exist_ok=True)
+                for i in range(16):
+                    gbc = ppals[GBA_SLOT.index(i)] if i in GBA_SLOT[:7] else self.cr.bg_pals[0x08]
+                    write_pal(folder / f"{i:02d}.pal", gba_palette(gbc))
+                if period != "day":
+                    timed[period] = folder.relative_to(REPO)
+            self.timed[sym] = timed
             made.append((sym, d.relative_to(REPO), True))
         return made
 
@@ -769,20 +791,49 @@ def tileset_c(made, callbacks):
 
 
 def map_palettes(cr, m):
-    """The 8 daytime palettes Crystal would load for this map, and a short tag naming them."""
+    """{period: 8 palettes} that Crystal loads for this map, and a short tag naming them."""
     env, ts = m["env"], m["tileset"]
     if ts in SPECIAL_PALETTES and not (ts == "TILESET_ICE_PATH" and env == "INDOOR"):
-        return [list(p) for p in cr.special[ts]], camel(ts[len("TILESET_"):])
-    pals = [list(cr.bg_pals[i]) for i in ENV_PALETTES[env]]
+        fixed = [list(p) for p in cr.special[ts]]  # special tilesets ignore the time of day
+        return {p: fixed for p in PERIODS}, camel(ts[len("TILESET_"):])
+    out = {}
+    for period in PERIODS:
+        pals = [list(cr.bg_pals[i]) for i in ENV_PERIOD_PALETTES[env][period]]
+        if env in ("TOWN", "ROUTE"):
+            roof = (cr.roof_pals_night if period == "night" else cr.roof_pals)[m["group_index"]]
+            pals[6] = [pals[6][0], roof[0], roof[1], pals[6][3]]
+        out[period] = pals
     tag = {"TOWN": "Outdoor", "ROUTE": "Outdoor", "INDOOR": "Indoor", "GATE": "Indoor"}.get(env, "Cave")
     if env in ("TOWN", "ROUTE"):
-        roof = cr.roof_pals[m["group_index"]]
-        pals[6] = [pals[6][0], roof[0], roof[1], pals[6][3]]
         tag += m["group"]
-    return pals, tag
+    return out, tag
 
 
 # ---------------------------------------------------------------------- main
+
+def time_palettes_c(builders):
+    """Authored morning/night palettes for src/day_night.c (src/data/tilesets/time_palettes.h)."""
+    out = ["// Generated by tools/ditto/import_crystal.py. Do not edit by hand.",
+           "// Crystal's morning and night palettes for each Johto secondary tileset.", ""]
+    rows = []
+    for b in builders:
+        for sym, timed in sorted(b.timed.items()):
+            if not timed:
+                continue
+            out.append(f"extern const struct Tileset gTileset_{sym};")
+            refs = {}
+            for period in ("morning", "night"):
+                if period not in timed:
+                    refs[period] = "NULL"
+                    continue
+                name = f"gTilesetPalettes_{sym}_{period.capitalize()}"
+                pals = "\n".join(f'    INCGFX_U16("{timed[period]}/{i:02d}.pal", ".gbapal"),' for i in range(16))
+                out.append(f"static const u16 {name}[][16] =\n{{\n{pals}\n}};")
+                refs[period] = name
+            rows.append(f"    {{ &gTileset_{sym}, {refs['morning']}, {refs['night']} }},")
+    out.append("\nconst struct TilesetTimePalettes gTilesetTimePalettes[] =\n{\n" + "\n".join(rows) + "\n    { NULL },\n};")
+    (REPO / "src/data/tilesets/time_palettes.h").write_text("\n".join(out) + "\n")
+
 
 def is_cut_tree(o):
     return o.get("graphics_id") == "OBJ_EVENT_GFX_CUTTABLE_TREE" and o.get("script") == "EventScript_CutTree"
@@ -901,6 +952,7 @@ def main():
         made += b.write()
     tileset_c(made, {b.sym: f"InitTilesetAnim_{b.sym}" for b in builders.values() if b.anims})
     anim_c(builders.values())
+    time_palettes_c(builders.values())
 
     # 4. layouts: one per (block file, tileset, variant)
     layout_of, new_layouts, seen, cut_trees = {}, [], {}, {}
