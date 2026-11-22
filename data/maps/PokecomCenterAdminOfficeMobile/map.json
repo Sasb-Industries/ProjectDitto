@@ -2,7 +2,7 @@
   "id": "MAP_POKECOM_CENTER_ADMIN_OFFICE_MOBILE",
   "name": "PokecomCenterAdminOfficeMobile",
   "layout": "LAYOUT_POKECOM_CENTER_ADMIN_OFFICE_MOBILE",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_GSC_POKEMON_CENTER",
   "region_map_section": "MAPSEC_GOLDENROD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

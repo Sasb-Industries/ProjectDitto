@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE_27",
   "name": "Route27",
   "layout": "LAYOUT_ROUTE_27",
-  "music": "MUS_RG_ROUTE3",
+  "music": "MUS_GSC_ROUTE_26",
   "region_map_section": "MAPSEC_ROUTE_27",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

@@ -2,7 +2,7 @@
   "id": "MAP_MOUNT_MORTAR_1F_INSIDE",
   "name": "MountMortar1FInside",
   "layout": "LAYOUT_MOUNT_MORTAR_1F_INSIDE",
-  "music": "MUS_RG_MT_MOON",
+  "music": "MUS_GSC_UNION_CAVE",
   "region_map_section": "MAPSEC_ROUTE_42",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

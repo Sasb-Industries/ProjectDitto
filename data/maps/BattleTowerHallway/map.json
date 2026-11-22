@@ -2,7 +2,7 @@
   "id": "MAP_BATTLE_TOWER_HALLWAY",
   "name": "BattleTowerHallway",
   "layout": "LAYOUT_BATTLE_TOWER_HALLWAY",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_GSC_BATTLE_TOWER_THEME",
   "region_map_section": "MAPSEC_ROUTE_40",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

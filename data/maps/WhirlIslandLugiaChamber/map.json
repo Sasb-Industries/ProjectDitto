@@ -2,7 +2,7 @@
   "id": "MAP_WHIRL_ISLAND_LUGIA_CHAMBER",
   "name": "WhirlIslandLugiaChamber",
   "layout": "LAYOUT_WHIRL_ISLAND_LUGIA_CHAMBER",
-  "music": "MUS_RG_MT_MOON",
+  "music": "MUS_GSC_UNION_CAVE",
   "region_map_section": "MAPSEC_ROUTE_41",
   "requires_flash": true,
   "weather": "WEATHER_NONE",

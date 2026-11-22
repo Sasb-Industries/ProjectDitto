@@ -2,7 +2,7 @@
   "id": "MAP_GOLDENROD_UNDERGROUND",
   "name": "GoldenrodUnderground",
   "layout": "LAYOUT_GOLDENROD_UNDERGROUND",
-  "music": "MUS_RG_POKE_TOWER",
+  "music": "MUS_GSC_UNION_CAVE",
   "region_map_section": "MAPSEC_GOLDENROD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

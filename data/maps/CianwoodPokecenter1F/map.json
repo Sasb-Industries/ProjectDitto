@@ -2,7 +2,7 @@
   "id": "MAP_CIANWOOD_POKECENTER_1F",
   "name": "CianwoodPokecenter1F",
   "layout": "LAYOUT_AZALEA_POKECENTER_1F",
-  "music": "MUS_POKE_CENTER",
+  "music": "MUS_GSC_POKEMON_CENTER",
   "region_map_section": "MAPSEC_CIANWOOD_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -1034,12 +1034,22 @@ def main():
 
     # 6. maps
     songs = (REPO / "include/constants/songs.h").read_text()
+    music_map = REPO / "tools/ditto/crystal_music_map.json"
+    gsc_music = json.loads(music_map.read_text()) if music_map.exists() else {}
+    gsc_music.setdefault("MUSIC_NONE", "MUS_NONE")  # Crystal plays silence there too
+    missing_music = set()
     dropped_warps = dropped_conns = 0
     for m in chosen:
         c = m["const"]
-        music = next((mus for k, mus in MUSIC if k in m["music"]), ENV_MUSIC.get(m["env"], "MUS_RG_PEWTER"))
+        # Gold/Silver songs from tools/ditto/convert_crystal_music.py. The Radio Tower's
+        # "RADIO_TOWER_MUSIC |" flag (Rocket takeover music) is a story state; use the base song.
+        crystal_music = m["music"].split("|")[-1].strip()
+        music = gsc_music.get(crystal_music)
+        if music is None:
+            music = next((mus for k, mus in MUSIC if k in crystal_music), ENV_MUSIC.get(m["env"], "MUS_RG_PEWTER"))
+            missing_music.add(crystal_music)
         if not re.search(rf"\b{music}\b", songs):
-            music = "MUS_RG_PEWTER"
+            raise SystemExit(f"{music} is not in include/constants/songs.h; run convert_crystal_music.py")
         dirs = {"north": "up", "south": "down", "west": "left", "east": "right"}
         conns = []
         for direction, target, off in cr.connections.get(c, {}).get("list", []):
@@ -1121,6 +1131,8 @@ def main():
     for b in builders.values():
         print(f"  {b.sym}: {len(b.metatiles)} metatiles, {len(b.variants)} variants")
     print(f"warps looped back (destination not imported): {dropped_warps}; connections dropped: {dropped_conns}")
+    if missing_music:
+        print(f"no converted song for {sorted(missing_music)}; using placeholders")
     renamed = sorted(v for k, v in map_name.items() if v != cr.maps[k]["name"])
     print(f"renamed to avoid clashes: {renamed}")
 

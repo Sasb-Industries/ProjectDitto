@@ -2,7 +2,7 @@
   "id": "MAP_MAHOGANY_MART_1F",
   "name": "MahoganyMart1F",
   "layout": "LAYOUT_MAHOGANY_MART_1F",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_GSC_CHERRYGROVE_CITY",
   "region_map_section": "MAPSEC_MAHOGANY_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

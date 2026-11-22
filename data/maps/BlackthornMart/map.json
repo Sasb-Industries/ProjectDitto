@@ -2,7 +2,7 @@
   "id": "MAP_BLACKTHORN_MART",
   "name": "BlackthornMart",
   "layout": "LAYOUT_AZALEA_MART",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_GSC_AZALEA_TOWN",
   "region_map_section": "MAPSEC_BLACKTHORN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

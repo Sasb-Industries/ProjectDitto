@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE_44",
   "name": "Route44",
   "layout": "LAYOUT_ROUTE_44",
-  "music": "MUS_RG_ROUTE3",
+  "music": "MUS_GSC_LAKE_OF_RAGE",
   "region_map_section": "MAPSEC_ROUTE_44",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

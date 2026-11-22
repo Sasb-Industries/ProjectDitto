@@ -2,7 +2,7 @@
   "id": "MAP_DRAGONS_DEN_B1F",
   "name": "DragonsDenB1F",
   "layout": "LAYOUT_DRAGONS_DEN_B1F",
-  "music": "MUS_RG_MT_MOON",
+  "music": "MUS_GSC_DRAGONS_DEN",
   "region_map_section": "MAPSEC_BLACKTHORN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

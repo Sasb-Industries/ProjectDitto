@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE_43_GATE",
   "name": "Route43Gate",
   "layout": "LAYOUT_ROUTE_29_ROUTE_46_GATE",
-  "music": "MUS_RG_PEWTER",
+  "music": "MUS_GSC_LAKE_OF_RAGE",
   "region_map_section": "MAPSEC_ROUTE_43",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_OLIVINE_LIGHTHOUSE_5F",
   "name": "OlivineLighthouse5F",
   "layout": "LAYOUT_OLIVINE_LIGHTHOUSE_5F",
-  "music": "MUS_RG_POKE_TOWER",
+  "music": "MUS_GSC_LIGHTHOUSE",
   "region_map_section": "MAPSEC_OLIVINE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
